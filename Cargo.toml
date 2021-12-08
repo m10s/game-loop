@@ -17,16 +17,13 @@ wasm-bindgen = "0.2"
 
 [target.wasm32-unknown-unknown.dependencies.web-sys]
 version = "0.3"
-features = [
-  "Performance",
-  "Window",
-]
+features = ["Performance", "Window"]
 
 [features]
 window = ["winit"]
 
 [dependencies]
-winit = { version = "0.25", optional = true }
+winit = { version = "0.26", optional = true }
 
 [[example]]
 name = "using_a_window"
